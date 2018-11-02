@@ -5,7 +5,7 @@ const bodyparser = require('body-parser');
 var app = express();
 app.use(bodyparser.json());
 
-PORT = process.env.NODE_ENV || 3000;
+PORT = process.env.PORT || 3000;
 
 app.use('/movies',require('./controller/movies_controller').router);
 
